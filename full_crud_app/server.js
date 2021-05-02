@@ -24,9 +24,10 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 app.use('/images',express.static(path.resolve(__dirname,"assets/images")))
 
 app.get('/',(req,res)=>{
-    //res.send("The orange tree coffee shop - Menu");
-    res.render('index.');
+    res.render('index');
 })
+//app.use('/', require('./server/routes/router'))
+
 
 
 
