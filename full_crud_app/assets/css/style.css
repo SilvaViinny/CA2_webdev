@@ -19,7 +19,7 @@ a {
 }
 
 .container{
-    max-width: 1024px;
+    max-width: 720px;
     margin: auto;
 }
 
@@ -66,7 +66,7 @@ a {
 }
 
 #header nav{
-    background-color: #06d6a0;
+    background-color: #dd9104;
     padding: 1em 0;
     width: 100%;
 }
@@ -81,7 +81,7 @@ a {
     padding: .5em 1em;
 }
 
-#main-page .container form{
+#main-page.container form{
     margin: 2em 0;
 }
 
@@ -104,7 +104,7 @@ table{
 }
 
 .table tr:hover{
-    background-color:#06d6a0 ;
+    background-color:#dd9104 ;
 }
 
 .table tr:hover td > a{
@@ -137,7 +137,7 @@ table{
 
 }
 
-/*  add user & update user template */
+/*  add Item && update Item template */
 .form-title{
     margin-top: 2em;
 }
@@ -146,18 +146,18 @@ table{
     padding: .5em 0;
 }
 
-.new_user{
+.new_item{
     max-width: 786px;
     margin: auto;
 }
 
-#update_user .form-group,
-#add_user .form-group{
+#update_item .form-group,
+#add_item .form-group{
     margin: .4em 0;
 }
 
-#update_user .form-group input[type="text"],
-#add_user .form-group input[type="text"]{
+#update_item .form-group input[type="text"],
+#add_item .form-group input[type="text"]{
     width: 100%;
     padding: .6em 1em;
     margin: .5em 0;
@@ -167,8 +167,8 @@ table{
     border-radius: .2em;
 }
 
-#update_user .form-group .radio,
-#add_user .form-group .radio{
+#update_item .form-group .radio,
+#add_item .form-group .radio{
     margin: 1em 2em;
 }
 
