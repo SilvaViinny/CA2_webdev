@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
 
 :root{
-    --dark: #070501c4;
-    --light: #adb5bd;
+    --dark: #ececece3;
+    --light: #373738;
     --border: #dee2e6;
     --border-btn: #edf2f4;
 }
@@ -43,7 +43,7 @@ a {
 
 .border-shadow{
     border: 1px solid var(--border-btn);
-    box-shadow: 1px 3px 10px #686565;
+    box-shadow: 1px 3px 10px #cfcdcd;
 }
 
 .text-dark{
@@ -59,7 +59,7 @@ a {
 }
 
 .text-gradient{
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    background: linear-gradient(to right, #e42b2b, #ff0f0f);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -112,9 +112,9 @@ table{
 }
 
 .table .thead-dark th{
-    color: #fff;
+    color: rgb(5, 5, 5);
     background-color: var(--dark) ;
-    border-color: #32383e;
+    border-color: #cf2b2b;
 }
 
 @media only screen and (max-width: 1024px){
@@ -197,13 +197,13 @@ table{
 }
 
 .radio input[type='radio']:checked + .radio-label:before{
-    background-color: #16db93;
+    background-color: #dbad16;
     box-shadow: inset 0 0 0 4px #e9ecef;
 }
 
 .radio input[type='radio']:focus + .radio-label:before{
     outline: none;
-    border-color:#16db93;
+    border-color:#dbb716;
 }
 
 .radio input[type='radio']:disabled + .radio-label:before{
@@ -216,7 +216,7 @@ table{
 #add_user .form-group .btn{
     width: 100%;
     padding: .9em 1em;
-    background-color:#16db93; 
+    background-color:#dbad16; 
     border: none;
     font-family: 'PT Sans', sans-serif;
     font-size: 1em;
@@ -229,4 +229,70 @@ table{
 #add_user .form-group .btn:hover{
     background-color: var(--dark);
     color: var(--border);
+}
+
+/* Footer style */
+footer {
+  background: rgb(197, 138, 12);
+  color: #aaa;
+  padding-top: 10px;
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer h3 {
+ color: #0894d1;
+  letter-spacing: 1px;
+  margin: 30px 0 20px;
+}
+
+footer .three-column {
+ overflow: hidden;
+}
+
+footer .three-column li{
+ width: 33.3333%;
+  float: left;
+  padding: 5px 0;
+}
+
+footer .socila-list {
+  overflow: hidden;
+  margin: 20px 0 10px;
+}
+
+footer .socila-list li {
+  float: left;
+  margin-right: 3px;
+  opacity: 0.7;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .socila-list li:hover {
+  opacity: 1;
+}
+
+footer .img-thumbnail {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #444;
+  margin-bottom: 5px;
+}
+
+footer .copyright {
+  padding: 15px 0;
+  background: #333;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+footer .copyright span {
+  color: #0894d1;
 }
