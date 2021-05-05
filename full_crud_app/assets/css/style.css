@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
 
 :root{
-    --dark: #2b2d42;
+    --dark: #070501c4;
     --light: #adb5bd;
     --border: #dee2e6;
     --border-btn: #edf2f4;
@@ -43,7 +43,7 @@ a {
 
 .border-shadow{
     border: 1px solid var(--border-btn);
-    box-shadow: 1px 3px 10px #e9ecef;
+    box-shadow: 1px 3px 10px #686565;
 }
 
 .text-dark{

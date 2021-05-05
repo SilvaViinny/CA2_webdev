@@ -1,61 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
-<body>
-<!--Header-->
-        <header id="header">
-            <nav>
-                <div class="container">
-                    <div class="text-center">
-                        <a href="/"class="nav-brand text-dark"><i class="fas fa-mug-hot"></i>Coffee Shop Menu</a>
 
-                    </div>
+<body>
+    <!--Header-->
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark"><i class="fas fa-mug-hot"></i>Coffee Shop Menu</a>
 
                 </div>
-            </nav>
 
-        </header>
+            </div>
+        </nav>
+
+    </header>
     <!--/Header-->
 
     <!--Main-->
-        <main id="main-page">
-            <div class="container">
-                <div class="box-nav. d-fex justify-between">
-                    <div class="filter">
-                        <a href="/"><i class="fas fa-angle-double-left"></i>All Itens</a>
-                    </div>                 
+    <main id="main-page">
+        <div class="container">
+            <div class="box-nav. d-fex justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i>All Itens</a>
                 </div>
-                <div class="form-title text-center">
-                    <h2 class="text-dark">New Item</h2>
-                    <span class="text-light">Use the form to add new itens to Menu.</span>
-                </div>
-                <!--form-->
-                <form method="POST" id="update_item">
-                    <div class="new_item">
-                        <div class="form-group">
-                            <label for="item" class="text-dark">Item</label>
-                            <input type="hidden"item="id" value="">
-                            <input type="text" item="item" value=""placeholder="croissant">
-                        </div>
-                        <divclass="new_item">
-                        <div class="form-group">
-                            <label for="item" class="text-dark">Price</label>
-                            <input type="hidden"item="id" value="">
-                            <input type="text" item="item" value="" placeholder="2.50">
-                    </div>
-                
-                </form>
             </div>
-            <!--/form-->
-        </main>
+            <div class="form-title text-center">
+                <h2 class="text-dark">New Item</h2>
+                <span class="text-light">Use the form to add new itens to Menu.</span>
+            </div>
+            <!--form-->
+            <form method="POST" id="update_item">
+                <div class="new_item">
+                    <div class="form-group">
+                        <label for="item" class="text-dark">Item</label>
+                        <input type="hidden" item="id" value="">
+                        <input type="text" item="item" value="" placeholder="croissant">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="item" class="text-dark">Price</label>
+                        <input type="hidden" item="id" value="">
+                        <input type="text" item="item" value="" placeholder="2.50">
+                    </div>
+                    <div class="form-group">
+                        <label for="vegan" class="text-dark">Suitable for Vegan</label>
+                        <div class="inline">
+                            <input type="radio" name="vegan" value="vegan">
+                            <label for="vegan" class="text-light">Yes</label>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark"></button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <!--/form-->
+    </main>
     <!--/Main-->
 </body>
+
 </html>

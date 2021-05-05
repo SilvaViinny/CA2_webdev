@@ -2,9 +2,42 @@
 <!-- facilitator header -->
     <%- include('facilitator/_header') %>
 <!-- /facilitator header -->
-<!-- form handling -->
-            
-<!-- /Main Site -->
+
+
+   <!--Main-->
+        <main id="main-page">
+            <div class="container">
+                <div class="box-nav. d-fex-justify-between">
+                    <a href="/add-item" class="border-shadow">
+                        <spam class="text-gradient">New item</spam>
+
+                
+                    </a>
+                </div>
+                <!--form-->
+                <form action="/"method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Vegan</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <%- include('facilitator/_show')%>
+                    </tbody>
+                </table>
+                </form>
+            </div>
+            <!--/form-->
+        </main>
+    <!--/Main-->
+
+
   <!--facilitator footer-->
     <%- include('facilitator/_footer')%>
   <!--/facilitator footer-->
