@@ -1,0 +1,20 @@
+const express = require('express');
+const route = express.Router()
+
+
+
+
+
+router.get('/',(req,res)=>{
+    res.render('index');
+})
+
+router.get('/add-item',(req,res)=>{
+    res.render('add_item');
+})
+
+router.get('/update-item',(req,res)=>{
+    res.render('update_item');
+})
+
+module.exports=route

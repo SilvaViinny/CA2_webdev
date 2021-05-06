@@ -1,0 +1,30 @@
+
+ <!-- form handling -->
+ <form action="/api/item" method="POST" id="add_item">
+    <div class="new_item">
+        <div class="form-group">
+            <label for="item" class="text-light">Item</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="item" value="" placeholder="croissant">
+        </div>
+        <div class="form-group">
+            <label for="Price" class="text-light">Price</label>
+            <input type="text" name="price" value="" placeholder="2.50">
+        </div>
+        <div class="form-group">
+            <label for="vegan" class="text-light">Suitable for Vegan</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="vegan" value="Yes" >
+                <label for="radio-2" class="radio-label">Yes</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="vegan" value="No" >
+                <label for="radio-3" class="radio-label">No</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

@@ -4,14 +4,19 @@ const morgan = require('morgan');
 const bodyparser=require("body-parser");
 const path =require('path');
 
+const connectDB = require('./server/database/connection');
 
 const app = express();
-
+  
 dotenv.config({path:'conf.env'})
 const PORT = process.env.PORT||8080
 
 //request log
 app.use(morgan('tiny'));
+
+// mongodb connection
+connectDB();
+
 // request body parser
 app.use(bodyparser.urlencoded({extended:true}))
 //set view
@@ -23,12 +28,12 @@ app.use('/css',express.static(path.resolve(__dirname,"assets/css")))
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 app.use('/images',express.static(path.resolve(__dirname,"assets/images")))
 
-app.get('/',(req,res)=>{
-    res.render('index');
-})
-//app.use('/', require('./server/routes/router'))
+
+// load router
+
+app.use('/',require('./server/routes/router'))
 
 
 
 
-app.listen(PORT,()=> {console.log(`Server is up on http://localhost:${PORT}`)});
+app.listen(PORT,()=> {console.log(`Server is up on https://olive-caterpillar-bioie4hz.ws-eu03.gitpod.io/#/workspace/CA2_webdev:${PORT}`)});

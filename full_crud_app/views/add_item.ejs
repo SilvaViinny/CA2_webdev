@@ -1,56 +1,28 @@
-  
-  
-<!-- facilitator header -->
-    <%- include('facilitator/_header') %>
-<!-- /facilitator header -->
 
-   <!--Main-->
-    <main id="main-page">
-        <div class="container">
-            <div class="box-nav. d-fex justify-between">
-                <div class="filter">
-                    <a href="/"><i class="fas fa-angle-double-left"></i>All Itens</a>
-                </div>
-            </div>
-            <div class="form-title text-center">
-                <h2 class="text-dark">New Item</h2>
-                <span class="text-light">Use the form to add new itens to Menu.</span>
-            </div>
-            <!--form-->
-            <form method="POST" id="update_item">
-                <div class="new_item">
-                    <div class="form-group">
-                        <label for="item" class="text-dark">Item</label>
-                        <input type="hidden" item="id" value="">
-                        <input type="text" item="item" value="" placeholder="croissant">
-                    </div>
+<!-- include header -->
+<%- include('facilitator/_header') %>
+<!-- /include header -->
 
-                    <div class="form-group">
-                        <label for="item" class="text-dark">Price</label>
-                        <input type="hidden" item="id" value="">
-                        <input type="text" item="item" value="" placeholder="2.50">
-                    </div>
-                    <div class="form-group">
-                        <label for="vegan" class="text-dark">Suitable for Vegan</label>
-                        <div class="inline">
-                            <input type="radio" name="vegan" value="vegan">
-                            <label for="vegan" class="text-light">Yes</label>
-
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="btn text-dark"></button>
-                    </div>
-                </div>
-
-            </form>
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Itens</a>
+           </div>
         </div>
-        <!--/form-->
-    </main>
-    <!--/Main-->
-  
-  
-  <!--facilitator footer-->
-    <%- include('facilitator/_footer')%>
-  <!--/facilitator footer-->
+        <div class="form-title text-center">
+            <h2 class="text-dark">New Item</h2>
+            <span class="text-light">Use the form to add new itens to Menu.</span>
+        </div>
+
+        <!-- add item form -->
+        <%- include('facilitator/_form') %>
+       
+    </div>
+</main>
+<!-- /Main-Page -->
+
+<!-- include footer -->
+<%- include('facilitator/_footer') %>
+<!-- /include footer -->
