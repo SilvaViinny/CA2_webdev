@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const connectDB=async()=>{
     try{
         // mongodb connection str
-        const con = await mongoose.connect(process.env.MONGO_URI, {
+        const con = await mongoose.connect(process.env.MONGO_URL, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false,
@@ -18,3 +18,11 @@ const connectDB=async()=>{
 }
 
 module.exports = connectDB
+
+// const dbURI = "mongodb://localhost/test";
+//const dbURI = process.env.MONGO_URL;
+
+
+//mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  //      .then((result) => console.log('connected to db'))
+    //    .catch((err) => console.log(err));
